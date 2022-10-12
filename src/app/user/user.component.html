@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Second Name</th>
+                    <th scope="col">Middle Name</th>
+                    <th scope="col">age</th>
+                    <th scope="col">gender</th>
+                    <th scope="col">email</th>
+                    <th scope="col">birthDate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of userData.users">
+                    <td>{{i.id}}</td>
+                    <td>
+                        <div class="card">
+                            <img height="150px" src="{{i.image}}" class="card-img-top" alt="...">
+                        </div>
+                    </td>
+                    <td>{{i.firstName}}</td>
+                    <td>{{i.lastName}}</td>
+                    <td>{{i.maidenName}}</td>
+                    <td>{{i.age}}</td>
+                    <td>{{i.gender}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.birthDate}}</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
